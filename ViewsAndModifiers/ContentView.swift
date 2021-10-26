@@ -8,24 +8,44 @@
 import SwiftUI
 
 struct ContentView: View {
+//    let motto1 = Text("Draco dormiens")
+    var motto1: some View {
+        Text("Draco dormiens")
+    }
+    
+    let motto2 = Text("nunquam titillandus")
+    
+//    var spells: some View {
+////        VStack {
+////            Text("Lumos")
+////            Text("Obliviate")
+////        }
+//        Group {
+//            Text("Lumos")
+//            Text("Obliviate")
+//        }
+//    }
+    
+    @ViewBuilder var spells: some View {
+        Text("Lumos")
+        Text("Obliviate")
+    }
+    
     var body: some View {
 //        VStack {
-//            Text("Gryffindor")
-//                .font(.largeTitle)
-//            Text("Hufflepuff")
-//            Text("Ravenclaw")
-//            Text("Slytherin")
+//            motto1
+//                .foregroundColor(.red)
+//            motto2
+//                .foregroundColor(.blue)
 //        }
-//        .font(.title)
         
-        VStack {
-            Text("Gryffindor")
-                .blur(radius: 0)
-            Text("Hufflepuff")
-            Text("Ravenclaw")
-            Text("Slytherin")
+//        VStack {
+//            spells
+//        }
+        
+        HStack {
+            spells
         }
-        .blur(radius: 5)
     }
 }
 
